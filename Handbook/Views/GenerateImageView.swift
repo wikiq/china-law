@@ -6,22 +6,23 @@ struct GenerateImageView : View {
     var law: LawContent
     var content: String
     
-    var snapview : some View {
-        VStack {
-            ForEach(law.Titles, id:\.self) { txt in
-                LawContentTitleView(text: txt)
+    @Binding var searchText: String
+    
+    var contentView : some View {
+        VStack(alignment: .leading){
+            if let title = law.Titles.first {
+                LawContentTitleView(text: title)
             }
             Divider()
-            LawContentLineView(text: content, searchText: Binding.constant(""))
-        }
-        .background(Color.white)
+            LawContentLineView(text: content, searchText: $searchText)
+        }.padding(.top, 8)
     }
 
     var body: some View {
         VStack {
-            snapview
+            contentView
             Button(action: {
-                UIImageWriteToSavedPhotosAlbum(snapview.snapshotWithQRCode(), nil, nil, nil)
+                UIImageWriteToSavedPhotosAlbum(contentView.snapshotWithQRCode(), nil, nil, nil)
             }) {
                 Text("生成")
                     .bold()

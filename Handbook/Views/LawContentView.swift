@@ -102,7 +102,7 @@ private struct LawLineView: View {
                 }
             }
             .background {
-                NavigationLink("",destination: GenerateImageView(law: law, content: text),isActive: $showLink )
+                NavigationLink("",destination: GenerateImageView(law: law, content: text, searchText: $searchText), isActive: $showLink)
             }
     }
 }
