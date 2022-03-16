@@ -10,6 +10,9 @@
 		1632AD3527D5CAD200B42167 /* TOCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632AD3427D5CAD200B42167 /* TOCView.swift */; };
 		1632AD3727D6277F00B42167 /* WhatNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632AD3627D6277F00B42167 /* WhatNewView.swift */; };
 		1632AD3F27D8719600B42167 /* SettingFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1632AD3E27D8719600B42167 /* SettingFont.swift */; };
+		164F573227E1ADED00238171 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F573127E1ADED00238171 /* Snapshot.swift */; };
+		164F573427E1AE0F00238171 /* GenerateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164F573327E1AE0F00238171 /* GenerateImageView.swift */; };
+		1684E9CE27E1FF3A00C80BF4 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1684E9CD27E1FF3A00C80BF4 /* QRCode.swift */; };
 		16BA35C727CDDE8700694880 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BA35C627CDDE8700694880 /* Util.swift */; };
 		16C3362C27DB182500D3F1F0 /* LicenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C3362B27DB182500D3F1F0 /* LicenseView.swift */; };
 		16C3362E27DB18D700D3F1F0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 16C3362D27DB18D700D3F1F0 /* LICENSE */; };
@@ -36,6 +39,10 @@
 		1632AD3427D5CAD200B42167 /* TOCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOCView.swift; sourceTree = "<group>"; };
 		1632AD3627D6277F00B42167 /* WhatNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatNewView.swift; sourceTree = "<group>"; };
 		1632AD3E27D8719600B42167 /* SettingFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingFont.swift; sourceTree = "<group>"; };
+		164F573127E1ADED00238171 /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
+		164F573327E1AE0F00238171 /* GenerateImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageView.swift; sourceTree = "<group>"; };
+		164F573527E1B53500238171 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		1684E9CD27E1FF3A00C80BF4 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		16BA35C627CDDE8700694880 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		16C3362B27DB182500D3F1F0 /* LicenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseView.swift; sourceTree = "<group>"; };
 		16C3362D27DB18D700D3F1F0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -70,9 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164F573027E1ADE300238171 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				164F573127E1ADED00238171 /* Snapshot.swift */,
+				1684E9CD27E1FF3A00C80BF4 /* QRCode.swift */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
 		900EBCDB27D35C9D00E20FE4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				164F573527E1B53500238171 /* info.plist */,
 				902DAE5B27C7CBC200926036 /* Assets.xcassets */,
 				900EBCEB27D3815900E20FE4 /* LawData.xcdatamodeld */,
 			);
@@ -82,6 +99,7 @@
 		900EBCDC27D35CB800E20FE4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				164F573027E1ADE300238171 /* ext */,
 				16D28E9B27CF829A001FB6B8 /* FavoriteView.swift */,
 				9035983B27C9F96400C8D9E7 /* SettingView.swift */,
 				902DAE5927C7CBC100926036 /* ContentView.swift */,
@@ -91,6 +109,7 @@
 				1632AD3627D6277F00B42167 /* WhatNewView.swift */,
 				1632AD3E27D8719600B42167 /* SettingFont.swift */,
 				16C3362B27DB182500D3F1F0 /* LicenseView.swift */,
+				164F573327E1AE0F00238171 /* GenerateImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,12 +267,15 @@
 				900EBCEA27D3621700E20FE4 /* Law.swift in Sources */,
 				902DAE5827C7CBC100926036 /* App.swift in Sources */,
 				1632AD3F27D8719600B42167 /* SettingFont.swift in Sources */,
+				164F573227E1ADED00238171 /* Snapshot.swift in Sources */,
 				16BA35C727CDDE8700694880 /* Util.swift in Sources */,
+				1684E9CE27E1FF3A00C80BF4 /* QRCode.swift in Sources */,
 				16D28E9C27CF829A001FB6B8 /* FavoriteView.swift in Sources */,
 				900EBCE827D361AE00E20FE4 /* LocalProvider.swift in Sources */,
 				1632AD3527D5CAD200B42167 /* TOCView.swift in Sources */,
 				9035982C27C9012B00C8D9E7 /* LawContent.swift in Sources */,
 				900EBCE227D35E3500E20FE4 /* LawInfoView.swift in Sources */,
+				164F573427E1AE0F00238171 /* GenerateImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +409,7 @@
 				DEVELOPMENT_TEAM = YFKW2KV54P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Handbook/Resources/info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -418,6 +441,7 @@
 				DEVELOPMENT_TEAM = YFKW2KV54P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Handbook/Resources/info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

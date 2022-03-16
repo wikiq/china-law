@@ -74,10 +74,10 @@ private struct LawLineView: View {
     @State var showActions = false
     
     @Binding var searchText: String
+    @State var showLink = false
     
     var body: some View {
         LawContentLineView(text: text, searchText: $searchText)
-            
             .contextMenu {
                 Button {
                     LawProvider.shared.favoriteContent(lawID, line: text)
@@ -95,6 +95,14 @@ private struct LawLineView: View {
                 } label: {
                     Label("复制", systemImage: "doc")
                 }
+                Button {
+                    showLink.toggle()
+                } label: {
+                    Label("生成截图", systemImage: "photo")
+                }
+            }
+            .background {
+                NavigationLink("",destination: GenerateImageView(law: law, content: text),isActive: $showLink )
             }
     }
 }

@@ -22,6 +22,7 @@ let Contributors: [String] = [
 let ContributorsText = String(format: "贡献者: %@", Contributors.isEmpty ? "欢迎你来贡献！" : Contributors.joined(separator: ","))
 
 let DeveloperMail = "rankki.dev@icloud.com"
+let AppStoreLink = "https://apps.apple.com/cn/app/中国法律快查手册/id1612953870"
 
 struct SettingView: View {
 
